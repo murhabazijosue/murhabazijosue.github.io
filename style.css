@@ -163,3 +163,39 @@ footer {
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.project-overview-card {
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.project-overview-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-overview-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-overview-card h3 {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.project-overview-card a {
+  margin-bottom: 25px;
+}
+
