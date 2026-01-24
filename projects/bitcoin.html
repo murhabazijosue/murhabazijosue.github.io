@@ -17,51 +17,88 @@
     </div>
   </header>
 
-  <section class="container">
+ <section class="container">
 
-    <h2>Project Overview</h2>
-    <p>
-      This project analyzes historical Bitcoin market data to identify trends, correlations,
-      and patterns that influence price movement. The goal was to build a predictive model
-      that could support short-term market insights and data-driven decision-making.
-    </p>
+  <h2>Project Overview</h2>
+  <p>
+    Cryptocurrency markets are highly volatile and influenced by a wide range of factors,
+    making price behavior difficult to interpret and predict. Understanding historical
+    trends and patterns is essential for market analysis, risk assessment, and informed
+    decision-making.
+  </p>
+  <p>
+    This project focuses on analyzing historical Bitcoin price data to uncover market
+    behavior, identify meaningful relationships between price features, and develop
+    machine learning models to predict price movement trends.
+  </p>
 
-    <h2>Key Analysis & Visualizations</h2>
+  <h2>Problem Statement</h2>
+  <p>
+    The core challenge addressed in this project is determining whether historical price
+    data can be used to identify patterns that help predict future Bitcoin price movements.
+    Due to high volatility and correlated market variables, feature selection and model
+    evaluation play a critical role in building reliable predictions.
+  </p>
 
-    <div class="project-images">
-      <img src="../assets/images/bitcoin_heatmap.jpg" alt="Bitcoin Feature Correlation Heatmap">
-      <img src="../assets/images/bitcoin_confusion_matrix.jpg" alt="Bitcoin Model Evaluation">
-    </div>
+  <h2>Data Understanding & Exploratory Analysis</h2>
+  <p>
+    The dataset consists of historical Bitcoin price records, including open, high, low,
+    and close values. An exploratory data analysis (EDA) was conducted to understand price
+    distributions, trends over time, and relationships between variables.
+  </p>
+  <p>
+    A correlation analysis was performed to identify highly correlated features and reduce
+    redundancy, ensuring that the model focuses on meaningful signals rather than noise.
+  </p>
 
-    <h2>Methodology</h2>
-    <ul>
-      <li>Data cleaning and preprocessing</li>
-      <li>Exploratory data analysis and correlation analysis</li>
-      <li>Feature selection to reduce redundancy</li>
-      <li>Machine learning model development</li>
-      <li>Model evaluation using classification metrics</li>
-    </ul>
+  <h2>Key Visual Analysis</h2>
+  <div class="project-images">
+    <img src="../assets/images/bitcoin_heatmap.jpg" alt="Bitcoin Feature Correlation Heatmap">
+    <img src="../assets/images/bitcoin_confusion_matrix.jpg" alt="Bitcoin Model Evaluation">
+  </div>
 
-    <h2>Tools Used</h2>
-    <p>Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn</p>
+  <h2>Modeling Approach</h2>
+  <p>
+    The prediction task was framed as a classification problem to identify price movement
+    trends. Machine learning models were trained using selected features, and performance
+    was evaluated using appropriate metrics to assess prediction accuracy and consistency.
+  </p>
+  <p>
+    A confusion matrix was used to analyze true versus predicted outcomes, providing insight
+    into model strengths and limitations across different market conditions.
+  </p>
 
-    <h2>Real-World Impact</h2>
-    <p>
-      This project demonstrates how data-driven analysis can be used to understand
-      financial market behavior and support predictive insights. Similar approaches
-      are widely used in trading analytics, financial forecasting, and risk assessment.
-    </p>
+  <h2>Challenges & Key Learnings</h2>
+  <ul>
+    <li>Handling highly correlated financial features</li>
+    <li>Managing noisy and volatile time-series data</li>
+    <li>Balancing model complexity with interpretability</li>
+    <li>Evaluating models beyond accuracy alone</li>
+  </ul>
 
-    <h2>Source Code</h2>
-    <p>
-      <a href="https://github.com/murhabazijosue/Bitcoin-Price-Prediction" target="_blank">
-        View GitHub Repository
-      </a>
-    </p>
+  <h2>Tools & Technologies</h2>
+  <p>
+    Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+  </p>
 
-    <p><a href="../index.html">← Back to Portfolio</a></p>
+  <h2>Real-World Impact</h2>
+  <p>
+    This project demonstrates how data analytics and machine learning can be applied to
+    financial markets to extract insights from historical data. Similar analytical
+    approaches are widely used in trading analytics, market research, and risk management
+    to support data-driven financial decisions.
+  </p>
 
-  </section>
+  <h2>Source Code</h2>
+  <p>
+    <a href="https://github.com/murhabazijosue/Bitcoin-Price-Prediction" target="_blank">
+      View GitHub Repository
+    </a>
+  </p>
+
+  <p><a href="../index.html">← Back to Portfolio</a></p>
+
+</section>
 
 </body>
 </html>
