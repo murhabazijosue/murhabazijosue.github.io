@@ -235,6 +235,45 @@
 
   typeEffect();
 </script>
+<script>
+  const text = "Murhabazi Ansima Josue";
+  let index = 0;
+  let isDeleting = false;
+  const typingSpeed = 120;
+  const deletingSpeed = 80;
+  const pauseAfterTyping = 1500;
+
+  function typeAnimation() {
+    const element = document.getElementById("typing-text");
+
+    if (!element) return;
+
+    if (!isDeleting) {
+      element.textContent = text.substring(0, index + 1);
+      index++;
+
+      if (index === text.length) {
+        setTimeout(() => {
+          isDeleting = true;
+        }, pauseAfterTyping);
+      }
+    } else {
+      element.textContent = text.substring(0, index - 1);
+      index--;
+
+      if (index === 0) {
+        isDeleting = false;
+      }
+    }
+
+    setTimeout(
+      typeAnimation,
+      isDeleting ? deletingSpeed : typingSpeed
+    );
+  }
+
+  document.addEventListener("DOMContentLoaded", typeAnimation);
+</script>
 
 </body>
 </html>
