@@ -198,6 +198,34 @@
   <footer>
     <p>© 2026 Murhabazi Ansima Josue</p>
   </footer>
+<script>
+  const text = "Murhabazi Ansima Josue";
+  let index = 0;
+  let isDeleting = false;
+  const speed = 120;
+  const delayAfterComplete = 1500;
+
+  function typeEffect() {
+    const element = document.getElementById("typing-text");
+
+    if (!isDeleting) {
+      element.textContent = text.substring(0, index + 1);
+      index++;
+      if (index === text.length) {
+        setTimeout(() => (isDeleting = true), delayAfterComplete);
+      }
+    } else {
+      element.textContent = text.substring(0, index - 1);
+      index--;
+      if (index === 0) {
+        isDeleting = false;
+      }
+    }
+    setTimeout(typeEffect, speed);
+  }
+
+  typeEffect();
+</script>
 
 </body>
 </html>
