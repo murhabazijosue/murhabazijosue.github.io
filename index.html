@@ -180,36 +180,28 @@
 
 <!-- ✅ CLEAN TYPING ANIMATION (ONLY ONE SCRIPT) -->
 <script>
-  const nameText = "Murhabazi Ansima Josue";
-  const typingElement = document.getElementById("typing-text");
+  const text = "Murhabazi Ansima Josue";
+  const el = document.getElementById("typing-text");
 
-  let charIndex = 0;
-  let deleting = false;
+  let i = 0;
 
-  function typingLoop() {
-    if (!typingElement) return;
-
-    if (!deleting) {
-      typingElement.textContent = nameText.slice(0, charIndex + 1);
-      charIndex++;
-
-      if (charIndex === nameText.length) {
-        setTimeout(() => deleting = true, 1500);
-      }
+  function type() {
+    if (i <= text.length) {
+      el.textContent = text.slice(0, i);
+      i++;
+      setTimeout(type, 120);
     } else {
-      typingElement.textContent = nameText.slice(0, charIndex - 1);
-      charIndex--;
-
-      if (charIndex === 0) {
-        deleting = false;
-      }
+      setTimeout(() => {
+        i = 0;
+        el.textContent = "";
+        type();
+      }, 2000);
     }
-
-    setTimeout(typingLoop, deleting ? 80 : 120);
   }
 
-  document.addEventListener("DOMContentLoaded", typingLoop);
+  document.addEventListener("DOMContentLoaded", type);
 </script>
+
 
 </body>
 </html>
