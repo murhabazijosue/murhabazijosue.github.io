@@ -22,8 +22,20 @@ h2 {
 }
 
 .section {
-  padding: 60px 0%;
+  padding: 60px 0;
 }
+
+.section > .grid,
+.section > .projects-grid,
+.section > .section-text,
+.section > .section-sub {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
 
 .section-text,
 .section-sub {
