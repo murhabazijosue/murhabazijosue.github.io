@@ -283,3 +283,34 @@ footer {
   max-width: 320px;
   margin: 0 auto;
 }
+/* FIX GRID ALIGNMENT FOR LARGE SCREENS */
+.skills-grid,
+.certificates-grid,
+.contact-grid {
+  display: grid;
+  gap: 30px;
+}
+
+/* Skills: always 3 in one line (desktop) */
+.skills-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Certificates: 4 in one line */
+.certificates-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Contact: 3 in one line */
+.contact-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Responsive fallback */
+@media (max-width: 900px) {
+  .skills-grid,
+  .certificates-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
