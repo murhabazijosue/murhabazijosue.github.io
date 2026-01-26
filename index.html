@@ -180,28 +180,29 @@
 
 <!-- ✅ CLEAN TYPING ANIMATION (ONLY ONE SCRIPT) -->
 <script>
-  const text = "Murhabazi Ansima Josue";
-  const el = document.getElementById("typing-text");
+  document.addEventListener("DOMContentLoaded", () => {
+    const text = "Murhabazi Ansima Josue";
+    const el = document.getElementById("typing-text");
 
-  let i = 0;
+    let index = 0;
 
-  function type() {
-    if (i <= text.length) {
-      el.textContent = text.slice(0, i);
-      i++;
-      setTimeout(type, 120);
-    } else {
-      setTimeout(() => {
-        i = 0;
-        el.textContent = "";
-        type();
-      }, 2000);
+    function type() {
+      if (index <= text.length) {
+        el.textContent = text.substring(0, index);
+        index++;
+        setTimeout(type, 120);
+      } else {
+        setTimeout(() => {
+          index = 0;
+          el.textContent = "";
+          type();
+        }, 2000);
+      }
     }
-  }
 
-  document.addEventListener("DOMContentLoaded", type);
+    type();
+  });
 </script>
-
-
+  
 </body>
 </html>
