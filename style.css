@@ -127,7 +127,7 @@ h2 {
 
 .project-overview-card img {
   width: 100%;
-  height: 220px;          /* matches card nicely */
+  height: 250px;          /* matches card nicely */
   object-fit: cover;     /* fills entire box */
   object-position: center top; /* keeps faces & logo visible */
 }
