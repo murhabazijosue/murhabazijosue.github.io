@@ -277,3 +277,9 @@ footer {
   color: #cbd5f5;
   margin-bottom: 20px;
 }
+
+/* CERTIFICATES WIDTH CONTROL */
+#certificates .card {
+  max-width: 320px;
+  margin: 0 auto;
+}
