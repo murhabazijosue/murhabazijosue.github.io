@@ -179,30 +179,43 @@
 </footer>
 
 <!-- ✅ CLEAN TYPING ANIMATION (ONLY ONE SCRIPT) -->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const text = "Murhabazi Ansima Josue";
-    const el = document.getElementById("typing-text");
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const text = "Murhabazi Ansima Josue";
+  const element = document.getElementById("typing-text");
 
-    let index = 0;
+  let index = 0;
+  let isDeleting = false;
 
-    function type() {
-      if (index <= text.length) {
-        el.textContent = text.substring(0, index);
-        index++;
-        setTimeout(type, 120);
-      } else {
-        setTimeout(() => {
-          index = 0;
-          el.textContent = "";
-          type();
-        }, 2000);
+  const typingSpeed = 120;
+  const deletingSpeed = 80;
+  const pauseAfterTyping = 1500;
+
+  function typeLoop() {
+    if (!element) return;
+
+    if (!isDeleting) {
+      element.textContent = text.slice(0, index + 1);
+      index++;
+
+      if (index === text.length) {
+        setTimeout(() => (isDeleting = true), pauseAfterTyping);
+      }
+    } else {
+      element.textContent = text.slice(0, index - 1);
+      index--;
+
+      if (index === 0) {
+        isDeleting = false;
       }
     }
 
-    type();
-  });
+    setTimeout(typeLoop, isDeleting ? deletingSpeed : typingSpeed);
+  }
+
+  typeLoop();
+});
 </script>
-  
+ 
 </body>
 </html>
