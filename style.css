@@ -172,3 +172,37 @@ footer {
 .card a:hover {
   text-decoration: underline;
 }
+
+/* =========================
+   PROJECT PAGE CONTAINER
+========================= */
+.project-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* Headings spacing */
+.project-container h1,
+.project-container h2,
+.project-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Paragraph readability */
+.project-container p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #cbd5f5;
+}
+
+/* Lists alignment */
+.project-container ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.project-container li {
+  margin-bottom: 10px;
+}
