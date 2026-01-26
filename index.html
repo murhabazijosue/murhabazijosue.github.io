@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Murhabazi Ansima Josue | Data Science Portfolio</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
+<!-- HERO -->
 <header class="hero-ice">
 
   <nav class="hero-nav">
@@ -17,10 +18,11 @@
     <a href="#skills">Skills</a>
     <a href="#certificates">Certificates</a>
     <a href="assets/cv/Murhabazi_Ansima_Josue_CV.pdf" target="_blank">Resume</a>
-    <a href="#contact">Contact</a>
+    <a href="#contact" class="contact-btn">Contact</a>
   </nav>
 
   <div class="hero">
+    <!-- TEXT -->
     <div class="hero-content">
       <h1>Hi, I’m <span id="typing-text"></span></h1>
 
@@ -33,75 +35,117 @@
       </p>
     </div>
 
+    <!-- IMAGE -->
     <div class="hero-image">
-      <img src="assets/images/profile.jpg" alt="Murhabazi Ansima Josue">
+      <img src="assets/images/profile.jpg" alt="Murhabazi Ansima Josue" />
     </div>
   </div>
 </header>
 
+<!-- ABOUT -->
 <section id="about">
   <div class="container">
     <h2>About Me</h2>
-    <p>
+    <p class="center-text">
       I am a Data Science graduate with hands-on experience in data analysis, machine learning,
       and business analytics, supported by strong skills in Python, SQL, and BI tools.
+      I have worked on real-world projects involving data cleaning, exploratory data analysis,
+      predictive modeling, and demand forecasting.
+      <br /><br />
+      In addition to my academic background, I have over three years of professional experience
+      in sales and marketing within the ceramic and porcelain tile manufacturing industry.
+      <br /><br />
+      I am currently seeking internship or entry-level opportunities in data science or data
+      analytics where I can contribute to data-driven solutions.
     </p>
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
   <div class="container">
     <h2>Skills</h2>
+
     <div class="grid">
       <div class="card">
         <h3>Data Analysis & BI</h3>
-        <p>Excel, Power BI, SQL, Tableau</p>
+        <p>Excel, Power BI, SQL (MySQL, Oracle), Tableau</p>
       </div>
       <div class="card">
-        <h3>Machine Learning</h3>
-        <p>Python, Pandas, NumPy, Forecasting</p>
+        <h3>Programming & Machine Learning</h3>
+        <p>Python, Pandas, NumPy, Regression, Forecasting</p>
       </div>
       <div class="card">
-        <h3>Tools</h3>
-        <p>JupyterLab, Google Colab</p>
+        <h3>Tools & Platforms</h3>
+        <p>JupyterLab, Google Colab, CRM & Sales Systems</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
   <div class="container">
     <h2>Projects</h2>
+    <p class="center-text">
+      Selected projects demonstrating real-world data science applications.
+    </p>
+
     <div class="projects-grid">
-      <div class="project-overview-card">
-        <img src="assets/images/bitcoin_cover.jpg">
-        <h3>Bitcoin Market Analysis</h3>
-        <a class="btn-primary">View Project</a>
+      <div class="project-card">
+        <img src="assets/images/bitcoin_cover.jpg" alt="Bitcoin Project" />
+        <h3>Bitcoin Market Analysis & Prediction</h3>
+        <a href="projects/bitcoin.html" class="btn">View Project</a>
       </div>
-      <div class="project-overview-card">
-        <img src="assets/images/ola_cover.jpg">
-        <h3>Bike Ride Forecasting</h3>
-        <a class="btn-primary">View Project</a>
+
+      <div class="project-card">
+        <img src="assets/images/ola_cover.jpg" alt="Bike Project" />
+        <h3>Bike Ride Demand Forecasting</h3>
+        <a href="projects/ola-bike.html" class="btn">View Project</a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="container">
+    <h2>Certificates</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Python for Data Science</h3>
+        <a href="#" target="_blank">View Certificate</a>
+      </div>
+      <div class="card">
+        <h3>Power BI Certification</h3>
+        <a href="#" target="_blank">View Certificate</a>
+      </div>
+      <div class="card">
+        <h3>Cloud Computing</h3>
+        <a href="#" target="_blank">View Certificate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
   <div class="container">
     <h2>Contact</h2>
+
     <div class="grid">
       <div class="card">
         <h3>Email</h3>
-        <p>murhabazijosue@gmail.com</p>
+        <a href="mailto:murhabazijosue@gmail.com">murhabazijosue@gmail.com</a>
       </div>
       <div class="card">
         <h3>GitHub</h3>
-        <p>github.com/murhabazijosue</p>
+        <a href="https://github.com/murhabazijosue" target="_blank">github.com/murhabazijosue</a>
       </div>
       <div class="card">
         <h3>LinkedIn</h3>
-        <p>View Profile</p>
+        <a href="#" target="_blank">View Profile</a>
       </div>
     </div>
   </div>
@@ -111,16 +155,22 @@
   © 2026 Murhabazi Ansima Josue
 </footer>
 
+<!-- TYPING ANIMATION (SAFE) -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const text = "Murhabazi Ansima Josue";
   const el = document.getElementById("typing-text");
-  let i = 0, del = false;
+  let i = 0;
+  let del = false;
 
   function loop() {
-    el.textContent = del ? text.slice(0, --i) : text.slice(0, ++i);
-    if (i === text.length) del = true;
-    if (i === 0) del = false;
+    if (!del) {
+      el.textContent = text.slice(0, ++i);
+      if (i === text.length) setTimeout(() => del = true, 1200);
+    } else {
+      el.textContent = text.slice(0, --i);
+      if (i === 0) del = false;
+    }
     setTimeout(loop, del ? 80 : 120);
   }
   loop();
