@@ -328,3 +328,19 @@ footer {
 .project-section a:hover {
   text-decoration: underline;
 }
+/* ================================
+   FIX CERTIFICATE BUTTON ALIGNMENT
+   ================================ */
+
+#certificates .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 260px;
+}
+
+/* Push button to bottom */
+#certificates .card a,
+#certificates .card .btn-primary {
+  margin-top: auto;
+}
