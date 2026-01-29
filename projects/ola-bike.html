@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,140 +6,80 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <div class="project-page">
-<div class="project-container">
-  
-  <header>
-    <div class="container">
-      <h1 class="project-title">
-      Bike Ride Demand Forecasting & Scenario-Based Prediction
-      </h1>
-      
-      <p class="project-subtitle">
-        A machine learning project focused on predicting bike ride demand using
-        historical, weather, and time-based features.
+
+<div class="project-page">
+  <div class="project-container">
+
+    <header class="project-hero">
+      <h1>Bike Ride Demand Forecasting & Scenario-Based Prediction</h1>
+      <p class="project-tagline">
+        Machine learning–based demand prediction using historical and contextual data
       </p>
-    </div>
-  </header>
+    </header>
 
-  <section class="container">
+    <section class="project-section">
+      <h2>Project Overview</h2>
+      <p>
+        Ride-hailing and bike-sharing platforms operate in dynamic environments where
+        demand fluctuates based on time, weather, seasonality, and human behavior.
+        Accurate demand forecasting is essential for efficient resource allocation.
+      </p>
+    </section>
 
-  <h2 class="project-section-title">Project Overview</h2>
-  <p>
-    Ride-hailing and bike-sharing platforms operate in highly dynamic environments where
-    demand fluctuates based on time, weather conditions, seasonality, and human behavior.
-    Accurate demand forecasting is essential to ensure efficient resource allocation,
-    reduce operational costs, and maintain high customer satisfaction.
-  </p>
-  <p>
-    This project focuses on predicting bike ride demand using historical data combined with
-    contextual features. The objective is to design a predictive system that can estimate
-    demand under varying real-world conditions and support data-driven operational planning.
-  </p>
+    <section class="project-section">
+      <h2>Problem Statement</h2>
+      <p>
+        The challenge is predicting bike ride demand under varying conditions.
+        Poor demand estimation can result in idle vehicles, longer wait times,
+        and inefficient operations.
+      </p>
+    </section>
 
-  <h2>Problem Statement</h2>
-  <p>
-    One of the key challenges faced by mobility service providers is understanding how
-    demand changes throughout the day and across different environmental scenarios.
-    Poor demand estimation can result in idle vehicles, longer customer wait times,
-    and inefficient use of resources.
-  </p>
-  <p>
-    The goal of this project is to forecast expected bike ride demand by modeling the
-    relationship between historical ride patterns and influencing factors such as time,
-    weather, and calendar events.
-  </p>
+    <section class="project-section">
+      <h2>Data Understanding & Feature Engineering</h2>
+      <p>
+        Historical ride data was enriched with weather and time-based features.
+        Feature engineering captured demand cycles and environmental influence.
+      </p>
+    </section>
 
-  <h2>Data Understanding & Feature Engineering</h2>
-  <p>
-    The dataset used in this project consists of historical bike ride records enriched
-    with weather and time-based attributes. Extensive data preprocessing was performed,
-    including handling missing values, encoding categorical variables, and scaling
-    numerical features.
-  </p>
-  <p>
-    Feature engineering played a critical role in improving model performance. Time-based
-    features such as hour of the day, weekday, and month were used to capture demand
-    cycles, while weather-related variables such as temperature, humidity, and windspeed
-    helped explain variations caused by external conditions.
-  </p>
+    <section class="project-section">
+      <h2>Prediction Interface & Scenario Analysis</h2>
+      <div class="project-images">
+        <img src="../assets/images/ola_ui_1.jpg" alt="Prediction interface">
+        <img src="../assets/images/ola_ui_2.jpg" alt="Scenario-based prediction">
+      </div>
+    </section>
 
-  <h2>Modeling Approach</h2>
-  <p>
-    The demand forecasting task was formulated as a regression problem, where the target
-    variable represents the number of bike ride requests. Multiple regression models were
-    evaluated to identify an approach that balances prediction accuracy, stability, and
-    interpretability.
-  </p>
-  <p>
-    Model performance was assessed using appropriate regression metrics, and iterative
-    refinements were made to improve generalization across different demand scenarios.
-  </p>
+    <section class="project-section">
+      <h2>Challenges & Key Learnings</h2>
+      <ul>
+        <li>Capturing non-linear demand patterns</li>
+        <li>Handling seasonality and peak periods</li>
+        <li>Balancing accuracy and interpretability</li>
+        <li>Translating predictions into business insight</li>
+      </ul>
+    </section>
 
-  <h2>Prediction Interface & Scenario Analysis</h2>
-  <div class="project-images">
-    <img src="../assets/images/ola_ui_1.jpg" alt="Bike Demand Prediction Interface">
-    <img src="../assets/images/ola_ui_2.jpg" alt="Scenario-Based Demand Prediction">
+    <section class="project-section">
+      <h2>Tools & Technologies</h2>
+      <p>Python, Pandas, NumPy, Scikit-learn, Matplotlib</p>
+    </section>
+
+    <section class="project-section">
+      <h2>Source Code</h2>
+      <p>
+        <a href="https://github.com/murhabazijosue/Ola-Bike-Demand-Forecast-" target="_blank">
+          View GitHub Repository
+        </a>
+      </p>
+    </section>
+
+    <p style="text-align:center; margin-top:60px;">
+      <a href="../index.html">← Back to Portfolio</a>
+    </p>
+
   </div>
-  <p>
-    To demonstrate practical usability, an interactive prediction interface was developed.
-    This interface allows users to input real-time conditions such as time, weather, and
-    calendar information and instantly receive a demand prediction.
-  </p>
-  <p>
-    The interface supports scenario-based analysis, enabling users to observe how changes
-    in conditions impact predicted demand. This makes the model suitable for operational
-    planning and what-if analysis.
-  </p>
-
-  <h2>Challenges & Key Learnings</h2>
-  <ul>
-    <li>Capturing non-linear demand patterns influenced by time and weather</li>
-    <li>Handling seasonality and peak-demand periods</li>
-    <li>Designing features that reflect real-world mobility behavior</li>
-    <li>Balancing prediction accuracy with model interpretability</li>
-    <li>Translating technical predictions into business-relevant insights</li>
-  </ul>
-
-  <h2>Tools & Technologies</h2>
-  <p>
-    Python, Pandas, NumPy, Scikit-learn, Matplotlib, Tkinter
-  </p>
-
-  <h2>Real-World Impact</h2>
-  <p>
-    Accurate ride demand forecasting enables mobility platforms to optimize fleet
-    distribution, reduce customer wait times, and improve overall service efficiency.
-    The techniques demonstrated in this project are directly applicable to real-world
-    ride-hailing, bike-sharing, and urban transportation systems.
-  </p>
-  <p>
-    By leveraging predictive analytics, organizations can make proactive decisions that
-    enhance operational performance and support sustainable urban mobility.
-  </p>
-<h2>Key Takeaway</h2>
-<p>
-  This project highlights my ability to translate real-world problems into data-driven
-  solutions by combining analytical thinking, machine learning techniques, and practical
-  interpretation of results.
-</p>
-
-  <h2>Source Code</h2>
-  <p>
-    <a href="https://github.com/murhabazijosue/Ola-Bike-Demand-Forecast-" target="_blank">
-      View GitHub Repository
-    </a>
-  </p>
-
-  <p style="margin-top: 60px;">
-  <a href="../index.html" style="color:#00bcd4; text-decoration:none; font-weight:500;">
-    ← Back to Portfolio
-  </a>
-</p>
-
-
-</section>
-</div>
 </div>
 
 </body>
