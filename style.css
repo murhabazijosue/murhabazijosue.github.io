@@ -27,6 +27,47 @@ h2 {
   padding: 0 24px;
 }
 
+/* =====================================
+   MOBILE RESPONSIVENESS (CERTIFICATES)
+   ===================================== */
+
+@media (max-width: 768px) {
+
+  /* Make section padding comfortable */
+  section {
+    padding: 60px 20px;
+  }
+
+  /* Certificates grid: stack cards */
+  #certificates .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Cards adapt height on mobile */
+  #certificates .card {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  /* Text readability */
+  #certificates h3 {
+    font-size: 1.1rem;
+  }
+
+  #certificates p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Button full-width for thumb reach */
+  #certificates .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
 /* SECTIONS */
 .section {
   padding: 70px 0;
